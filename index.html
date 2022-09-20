@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>memory</title>
+    </head>
+    <body>
+        <div class="title-item">
+            <header class="judul">
+                <div class="title">
+                    <h1>MY MEMORY</h1>
+                </div>
+            </header>
+            <div class="img">
+                <div class="foto">
+                    <img src="file/foto/dingin.JPG" alt="dingin" class="img-foto" />
+                    <img src="file/foto/2 jari.JPG" alt="2 jari" class="img-foto" />
+                </div>
+            </div>
+            <div class="botan">
+                <div class="icn-btn">
+                    <div class="btn">
+                        <a><img src="file/foto/instagram.png" alt="instagram" class="logo" onclick="redirinstagram()" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio autoplay>
+            <source src="file/foto/Wherever you are.mp3" type="audio/mp3" />
+        </audio>
+        <footer class="sikil">
+            <p class="kaki">思い出だよ、絶対に忘れられないんだ。</p>
+            <button type="button" id="tombol" class="tombol1">message</button>
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        </footer>
+        <script>
+            function redirinstagram() {
+                window.location.href="https://instagram.com/handi_shira"
+            }
+
+            const tombol = document.querySelector('#tombol');
+            tombol.addEventListener('click',function() {
+                Swal.fire({
+                    title: 'Love U!',
+                    text: 'ho o, Tenan loo.',
+                    imageSrc: 'file/foto/japan.jpg/400/200',
+                    imageWidth: 400,
+                    imageHeight: 200,
+                    imageAlt: 'japan',
+                });
+            });
+        </script>
+    </body>
+</html>
