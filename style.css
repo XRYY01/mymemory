@@ -44,6 +44,7 @@ body {
 }
 
 .btn {
+    display: column;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
